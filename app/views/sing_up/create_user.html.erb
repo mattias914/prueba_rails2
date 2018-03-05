@@ -1,4 +1,4 @@
-          <h1>Creacion de usuario</h1>
+          <h2>Creacion de usuario</h2>
 <%=form_whith(model: @user, true) do |f| %>
 <% if @user.errors.any? %>
 
@@ -13,10 +13,12 @@
   <%end%>
 
   <div.class="field">
-    <%=f.label :email %><br/>
-    <%=f.text_field <:email></:email> %>
-  </div>
-  <div class ="field">
-    <%=f.label :password%><br/>
-    <%=f.password_field :password%>
-</div>
+        <%=f.label :email %><br/>
+        <%=f.text_field <:email></:email> %>
+      </div>
+      <div class ="field">
+        <%=f.label :password%><br/>
+        <%=f.password_field :password%>
+      </div>
+  <div classs="action"><%= f.submit "sing up"%></div>
+<%= end %>

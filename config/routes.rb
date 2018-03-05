@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'user/user_id'
+
   get 'sing_up/create_user'
 
   get 'new_user/user'
