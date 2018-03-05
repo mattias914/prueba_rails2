@@ -1,0 +1,22 @@
+          <h1>Creacion de usuario</h1>
+<%=form_whith(model: @user, true) do |f| %>
+<% if @user.errors.any? %>
+
+    <div class="error_mesages">
+     <h2>La forma es invalida</h2>
+       <ul>
+           <% @user.errors.full_messages.each do  |messages| %>
+        <li><%= messages %></li>
+         <% end %>
+       </ul>
+    </div>
+  <%end%>
+
+  <div.class="field">
+    <%=f.label :email %><br/>
+    <%=f.text_field <:email></:email> %>
+  </div>
+  <div class ="field">
+    <%=f.label :password%><br/>
+    <%=f.password_field :password%>
+</div>
